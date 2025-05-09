@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-element {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  top: 200px;
+  left: 200px;
+  animation-name: move-box;
+  animation-duration: 3000ms;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 500ms;
+  animation-iteration-count: infinite;
+}
+@keyframes move-box {
+    0% {
+      background-color: blue;
+      transform: translate(0, 0);
+    }
+    25% {
+      background-color: green;
+      transform: translate(300px, 0);
+    }
+    50% {
+      background-color: yellow;
+      transform: translate(300px, -300px);
+    }
+    75% {
+      background-color: red;
+      transform: translate(0, -300px);
+    }
+    100% {
+      background-color: blue;
+      transform: translate(0, 0);
+    }
+  }
+  /* нарешті */
